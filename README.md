@@ -16,7 +16,7 @@ Marginal net revenue from harvesting is depicted as
 **p** is the price of the resource and **g(x)** is representing the harvesting cost per unit
   g(x) = c/(x+1), where **c** is the cost of harvesting one unit from population x+1 
 
-actual profit of harvesting a unit when population is x / actual profit of harvesting a unit when population x has reproduced and gave a new amount of population
+Actual profit of harvesting a unit when population is x / actual profit of harvesting a unit when population x has reproduced and gave a new amount of population
 
 The economic value of an animal today compared with the value of the population it helps produce next period is therefore depicted as
 M'(x)/ Μ'[f(x)]
@@ -27,12 +27,13 @@ The code visualises Figure 3a and b depicting profit maximisation at different p
 ### Requrements
 *Installations*
 pip install numpy matplotlib scipy pillow
-  
-*Imports*
-import matplotlib.pyplot as plt
-import numpy as np
-from scipy.optimize import fsolve
-from matplotlib.animation import FuncAnimation, PillowWriter
+
+### How to Run
+
+1. Download or clone the repository.
+2. Install the dependencies.
+3. Run the Python script or notebook.
+
 
 ### References
 Clark, C. W. (1973). Profit Maximization and the Extinction of Animal Species. Journal of Political Economy, 81(4), 950–961. http://www.jstor.org/stable/1831136
