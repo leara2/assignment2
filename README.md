@@ -24,7 +24,7 @@ M'(x)/ Μ'[f(x)]
 ### Visualisation
 The code visualises Figure 3a and b depicting profit maximisation at different price rates. It also allows to see how alpha varies and at which point of the function the maximum revenue can be achieved by harvesting the entire resource.
 
-### Requrements
+### Requirements
 *Installations*
 pip install numpy matplotlib scipy pillow
 
