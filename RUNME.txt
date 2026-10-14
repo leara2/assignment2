@@ -1,1 +1,15 @@
-h
+#RUNME
+
+### Requirements
+*Installations*
+pip install numpy matplotlib scipy pillow
+
+### How to Run
+
+1. Download or clone the repository.
+2. Install the dependencies.
+3. Run the Python script or notebook.
+
+
+### References
+Clark, C. W. (1973). Profit Maximization and the Extinction of Animal Species. Journal of Political Economy, 81(4), 950–961. http://www.jstor.org/stable/1831136
