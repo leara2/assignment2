@@ -1,4 +1,4 @@
-#RUNME
+
 
 ### Requirements
 *Installations*
@@ -13,3 +13,4 @@ pip install numpy matplotlib scipy pillow
 
 ### References
 Clark, C. W. (1973). Profit Maximization and the Extinction of Animal Species. Journal of Political Economy, 81(4), 950–961. http://www.jstor.org/stable/1831136
+
