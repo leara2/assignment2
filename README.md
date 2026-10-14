@@ -1,8 +1,37 @@
-# assigntmeht2
-Complex Systems group assignment 2: Replicate and plot a model of a chosen paper
+# Complex Systems group assignment 2: Replicate and plot a model of a chosen paper
 
-This project replicates Figure 3 from Clark (1973) Profit Maximization and the Extinction of Animal Species using the math introduced in the paper and the criteria Clark gives for the functions used. 
 
-Figure 3a (intermediate price) and 3b (high price) are recreated.
+### Overview
+This project replicates parts of the mathematical proofs by Clark (1973), showing how the sole owner of a resource might decide that it is optimal to harvest named resource to extinction if they consider the immediate revenue from harvesting to be sufficiently high compared to future harvesting revenue. The math introduced in the paper and the criteria Clark gives for the functions are used. Figure 3a (intermediate price) and 3b (high price) are recreated as well as a simulation of the effect of the discount rate (α) on f'(x) to show how the introduction of alpha can make an optimum intersection point between sustainable species growth and profit maximisation disappear, making it the most rational choice for the owner of the resource to harvest remaining animals to extinction. 
 
-The effect of the discount rate (α) on f'(x) is also plotted to show how this affects profit margin and how this can lead to the extinction of animals.
+### The Model
+The model combines a growth function with an economical harvesting function.
+
+Population growth is modelled by: 
+  f(x)= x + r*x*(1 - x/K)
+**x** is the current population, **r** the growth parameter and **K** the carrying capacity of the environment
+
+Marginal net revenue from harvesting is depicted as
+  M'(x) = p - g(x)
+**p** is the price of the resource and **g(x)** is representing the harvesting cost per unit
+  g(x) = c/(x+1), where **c** is the cost of harvesting one unit from population x+1 
+
+actual profit of harvesting a unit when population is x / actual profit of harvesting a unit when population x has reproduced and gave a new amount of population
+
+  M'(x)/ Μ'[f(x)]
+
+### Visualisation
+The code visualises Figure 3a and b depicting profit maximisation at different price rates. It also allows to see how alpha varies and at which point of the function the maximum revenue can be achieved by harvesting the entire resource.
+
+### Requrements
+*Installations*
+  pip install numpy matplotlib scipy pillow
+  
+*Imports*
+  import matplotlib.pyplot as plt
+  import numpy as np
+  from scipy.optimize import fsolve
+  from matplotlib.animation import FuncAnimation, PillowWriter
+
+### References
+Clark, C. W. (1973). Profit Maximization and the Extinction of Animal Species. Journal of Political Economy, 81(4), 950–961. http://www.jstor.org/stable/1831136
